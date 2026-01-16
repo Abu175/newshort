@@ -6,11 +6,11 @@ import { connect } from '@/app/dbmongo/route';
 import * as fs from 'fs';
 
 
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
+// export const config = {
+//   api: {
+//     bodyParser: false,
+//   },
+// };
 
 export async function POST(req: NextRequest) {
   const formData = await req.formData();
