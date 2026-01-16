@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extended Sports UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-yellow-400 to-red-500 font-sans text-white">
+
+  <!-- Header -->
+  <header class="p-5 bg-gradient-to-r from-indigo-500 to-purple-600">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-3xl font-bold">haawa</div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#" class="hover:text-gray-300">Home</a></li>
+          <li><a href="#" class="hover:text-gray-300">Tools</a></li>
+          <li><a href="#" class="hover:text-gray-300">About</a></li>
+          <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="bg-green-500 hover:bg-green-700 px-4 py-2 rounded-lg">Sign Out</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+<!-- Hexagonal Gallery Section -->
+<section class="py-16 bg-gray-100">
+  <div class="container mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-12">Gallery</h2>
+    <div class="grid grid-cols-3 gap-4 justify-center items-center">
+      <!-- Hexagon Container -->
+      <div class="relative w-32 h-32 md:w-40 md:h-40 mx-auto">
+        <div class="hexagon">
+          <img src="https://via.placeholder.com/300" alt="Image 1" class="w-full h-full object-cover rounded-lg">
+        </div>
+      </div>
+
+      <div class="relative w-32 h-32 md:w-40 md:h-40 mx-auto">
+        <div class="hexagon">
+          <img src="https://via.placeholder.com/300" alt="Image 2" class="w-full h-full object-cover rounded-lg">
+        </div>
+      </div>
+
+      <div class="relative w-32 h-32 md:w-40 md:h-40 mx-auto">
+        <div class="hexagon">
+          <img src="https://via.placeholder.com/300" alt="Image 3" class="w-full h-full object-cover rounded-lg">
+        </div>
+      </div>
+
+      <div class="relative w-32 h-32 md:w-40 md:h-40 mx-auto">
+        <div class="hexagon">
+          <img src="https://via.placeholder.com/300" alt="Image 4" class="w-full h-full object-cover rounded-lg">
+        </div>
+      </div>
+
+      <div class="relative w-32 h-32 md:w-40 md:h-40 mx-auto">
+        <div class="hexagon">
+          <img src="https://via.placeholder.com/300" alt="Image 5" class="w-full h-full object-cover rounded-lg">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Custom CSS for Hexagonal Layout -->
+<style>
+  .hexagon {
+    position: relative;
+    width: 100%;
+    padding-bottom: 86.6%; /* Height relative to width for hexagonal shape */
+    background-color: #fff;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+  }
+
+  .hexagon:hover {
+    transform: scale(1.05); /* Hover effect for hexagons */
+  }
+</style>
+
+
+
+  <!-- Sports Highlights Section -->
+  <section class="py-10 bg-gradient-to-r from-red-500 to-yellow-500">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-8">Highlights</h2>
+      <div class="flex space-x-8">
+        <div class="bg-white text-black p-6 rounded-lg">
+          <img src="https://via.placeholder.com/300x200" alt="Event 1" class="mb-4">
+          <h3 class="text-2xl font-bold">Sunsets You Water 3</h3>
+          <p class="mt-2">Friday 11 | 22:43:39 | Eighth Event</p>
+          <button class="mt-4 bg-red-500 hover:bg-red-700 px-4 py-2 text-white rounded-lg">Sign in Tate</button>
+        </div>
+        <div class="bg-white text-black p-6 rounded-lg">
+          <img src="https://via.placeholder.com/300x200" alt="Event 2" class="mb-4">
+          <h3 class="text-2xl font-bold">Pelts an Frents</h3>
+          <p class="mt-2">Profile 1 | Athletes</p>
+          <button class="mt-4 bg-red-500 hover:bg-red-700 px-4 py-2 text-white rounded-lg">View Profile</button>
+        </div>
+        <div class="bg-white text-black p-6 rounded-lg">
+          <img src="https://via.placeholder.com/300x200" alt="Event 3" class="mb-4">
+          <h3 class="text-2xl font-bold">Athlete Profiles</h3>
+          <p class="mt-2">Profile 2 | Athletes</p>
+          <button class="mt-4 bg-red-500 hover:bg-red-700 px-4 py-2 text-white rounded-lg">View Profile</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extended Section -->
+  <section class="py-16 bg-blue-700">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-8">Extended Section</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white text-black p-6 rounded-lg">
+          <img src="https://via.placeholder.com/300x200" alt="Extended 1" class="mb-4">
+          <h3 class="text-2xl font-bold">New Feature 1</h3>
+          <p class="mt-2">Description of new feature.</p>
+          <button class="mt-4 bg-indigo-500 hover:bg-indigo-700 px-4 py-2 text-white rounded-lg">Explore</button>
+        </div>
+        <div class="bg-white text-black p-6 rounded-lg">
+          <img src="https://via.placeholder.com/300x200" alt="Extended 2" class="mb-4">
+          <h3 class="text-2xl font-bold">New Feature 2</h3>
+          <p class="mt-2">Description of new feature.</p>
+          <button class="mt-4 bg-indigo-500 hover:bg-indigo-700 px-4 py-2 text-white rounded-lg">Explore</button>
+        </div>
+        <div class="bg-white text-black p-6 rounded-lg">
+          <img src="https://via.placeholder.com/300x200" alt="Extended 3" class="mb-4">
+          <h3 class="text-2xl font-bold">New Feature 3</h3>
+          <p class="mt-2">Description of new feature.</p>
+          <button class="mt-4 bg-indigo-500 hover:bg-indigo-700 px-4 py-2 text-white rounded-lg">Explore</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-16 bg-gradient-to-r from-purple-500 to-pink-500">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-8">Testimonials</h2>
+      <div class="flex space-x-8 justify-center">
+        <div class="bg-white text-black p-6 rounded-lg max-w-sm">
+          <p class="mb-4">"This platform changed my life! The events are spectacular, and the community is awesome!"</p>
+          <h3 class="text-xl font-bold">- Athlete A</h3>
+        </div>
+        <div class="bg-white text-black p-6 rounded-lg max-w-sm">
+          <p class="mb-4">"I love the opportunities I get here as an athlete, and the team is incredibly supportive!"</p>
+          <h3 class="text-xl font-bold">- Athlete B</h3>
+        </div>
+        <div class="bg-white text-black p-6 rounded-lg max-w-sm">
+          <p class="mb-4">"An amazing experience! The tools and resources available are unbeatable."</p>
+          <h3 class="text-xl font-bold">- Athlete C</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="py-16 bg-white text-black">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-8">Latest Blog Posts</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-200 p-6 rounded-lg">
+          <img src="https://via.placeholder.com/300x200" alt="Blog 1" class="mb-4">
+          <h3 class="text-2xl font-bold">How to Prepare for the Next Event</h3>
+          <p class="mt-2">Learn how to optimize your performance in the upcoming competition.</p>
+          <button class="mt-4 bg-blue-500 hover:bg-blue-700 px-4 py-2 text-white rounded-lg">Read More</button>
+        </div>
+        <div class="bg-gray-200 p-6 rounded-lg">
+          <img src="https://via.placeholder.com/300x200" alt="Blog 2" class="mb-4">
+          <h3 class="text-2xl font-bold">Top 10 Athletes of the Year</h3>
+          <p class="mt-2">Discover the top athletes making waves in the industry.</p>
+          <button class="mt-4 bg-blue-500 hover:bg-blue-700 px-4 py-2 text-white rounded-lg">Read More</button>
+        </div>
+        <div class="bg-gray-200 p-6 rounded-lg">
+          <img src="https://via.placeholder.com/300x200" alt="Blog 3" class="mb-4">
+          <h3 class="text-2xl font-bold">Event Highlights from Last Month</h3>
+          <p class="mt-2">Catch up on the biggest moments from our recent events.</p>
+          <button class="mt-4 bg-blue-500 hover:bg-blue-700 px-4 py-2 text-white rounded-lg">Read More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="py-16 bg-gray-900 text-white">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-8">Event Gallery</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <img src="https://via.placeholder.com/400x300" alt="Gallery 1" class="rounded-lg">
+        <img src="https://via.placeholder.com/400x300" alt="Gallery 2" class="rounded-lg">
+        <img src="https://via.placeholder.com/400x300" alt="Gallery 3" class="rounded-lg">
+        <img src="https://via.placeholder.com/400x300" alt="Gallery 4" class="rounded-lg">
+        <img src="https://via.placeholder.com/400x300" alt="Gallery 5" class="rounded-lg">
+        <img src="https://via.placeholder.com/400x300" alt="Gallery 6" class="rounded-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-10 text-center">
+    <p>&copy; 2024 Your Sports Website. All rights reserved.</p>
+    <p class="mt-4"><a href="#" class="hover:text-gray-400">Privacy Policy</a> | <a href="#" class="hover:text-gray-400">Terms of Service</a></p>
+  </footer>
+
+</body>
+</html>

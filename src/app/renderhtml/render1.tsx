@@ -1,0 +1,413 @@
+'use client'
+import React from 'react';
+
+const CodePreview: React.FC = () => {
+  const htmlCode = `
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Future of Web Design: AI Revolution</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .hero-content {
+            text-align: center;
+            z-index: 1;
+        }
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #3490dc, #6574cd);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        .title {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+        .subtitle {
+            font-size: 1.5rem;
+            color: #e2e8f0;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 2rem;
+            margin-top: -10vh;
+        }
+        .sidebar {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .main-content {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 3rem;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #2d3748;
+        }
+        .author-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+        .toc {
+            position: sticky;
+            top: 2rem;
+        }
+        .toc-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .toc-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .toc-item {
+            margin-bottom: 0.5rem;
+        }
+        .toc-link {
+            color: #4a5568;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .toc-link:hover {
+            color: #3490dc;
+        }
+        .cta {
+            background-color: #3490dc;
+            color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .cta-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .cta-form {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        .cta-input {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            font-size: 1rem;
+        }
+        .cta-button {
+            background-color: #2d3748;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0 4px 4px 0;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #4a5568;
+        }
+    </style>
+
+
+    <div class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="title">T<span style="font-size: 16px;">he Future of Web Desig</span>n</h1>
+            <p class="subtitle">How AI is Revolutionizing the Industry</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="content">
+            <aside class="sidebar">
+                <div class="author-card">
+                    <img src="/emily-avatar.jpg" alt="Emily Chen" class="author-image">
+                    <div>
+                        <h3>Emily Chen</h3>
+                        <p>May 15, 2023 • 15 min read</p>
+                    </div>
+                </div>
+                <nav class="toc">
+                    <h2 class="toc-title">Table of Contents</h2>
+                    <ul class="toc-list">
+                        <li class="toc-item"><a href="#introduction" class="toc-link">Introduction</a></li>
+                        <li class="toc-item"><a href="#what-is-ai-web-design" class="toc-link">What is AI Web Design?</a></li>
+                        <li class="toc-item"><a href="#benefits" class="toc-link">Benefits of AI in Web Design</a></li>
+                        <li class="toc-item"><a href="#challenges" class="toc-link">Challenges and Limitations</a></li>
+                        <li class="toc-item"><a href="#future" class="toc-link">The Future of AI Web Design</a></li>
+                        <li class="toc-item"><a href="#conclusion" class="toc-link">Conclusion</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            
+            <main class="main-content">
+                <section id="introduction" class="section">
+                    <h2 class="section-title">Introduction</h2>
+                    <p>The web design industry is on the brink of a major transformation. Artificial Intelligence (AI) is no longer a futuristic concept but a present reality that's reshaping how we approach web design. From automating routine tasks to generating entire layouts, AI is proving to be a game-changer in the field.</p>
+                </section>a<article class="max-w-4xl mx-auto px-4 py-12 font-sans">
+    <!-- Hero Section -->
+    <header class="mb-16">
+      <div class="mb-6">
+        <span class="text-sm font-semibold text-blue-600 uppercase tracking-wider">AI &amp; Technology</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        The Future of Web Design: How AI is Revolutionizing the Industry
+      </h1>
+      <p class="text-xl text-gray-600 mb-8">
+        Discover how artificial intelligence is transforming web design and what it means for developers, designers, and businesses.
+      </p>
+      <div class="flex items-center space-x-4">
+        <img src="/emily-avatar.jpg" alt="Emily Chen" class="w-12 h-12 rounded-full">
+        <div>
+          <p class="font-semibold text-gray-900">Emily Chen</p>
+          <p class="text-sm text-gray-600">May 15, 2023 • 15 min read</p>
+        </div>
+      </div>
+    </header>
+  
+    <!-- Table of Contents -->
+    <nav class="bg-gray-100 p-6 rounded-lg mb-12">
+      <h2 class="text-lg font-semibold mb-4">What's in this article</h2>
+      <ul class="space-y-2">
+        <li><a href="#introduction" class="text-blue-600 hover:underline">Introduction</a></li>
+        <li><a href="#what-is-ai-web-design" class="text-blue-600 hover:underline">What is AI Web Design?</a></li>
+        <li><a href="#benefits" class="text-blue-600 hover:underline">Benefits of AI in Web Design</a></li>
+        <li><a href="#challenges" class="text-blue-600 hover:underline">Challenges and Limitations</a></li>
+        <li><a href="#future" class="text-blue-600 hover:underline">The Future of AI Web Design</a></li>
+        <li><a href="#conclusion" class="text-blue-600 hover:underline">Conclusion</a></li>
+      </ul>
+    </nav>
+  
+    <!-- Main Content -->
+    <main class="prose prose-lg max-w-none">
+      <section id="introduction">
+        <h2>Introduction</h2>
+        <p>
+          The web design industry is on the brink of a major transformation. Artificial Intelligence (AI) is no longer a futuristic concept but a present reality that's reshaping how we approach web design. From automating routine tasks to generating entire layouts, AI is proving to be a game-changer in the field.
+        </p>
+        <figure>
+          <img src="/ai-web-design-intro.jpg" alt="AI Web Design Concept" class="rounded-lg">
+          <figcaption class="text-center text-sm text-gray-600 mt-2">AI is transforming the landscape of web design</figcaption>
+        </figure>
+      </section>
+  
+      <section id="what-is-ai-web-design">
+        <h2>What is AI Web Design?</h2>
+        <p>
+          AI web design refers to the use of artificial intelligence technologies to automate and enhance various aspects of the web design process. This can include everything from generating layout suggestions to optimizing user experiences based on data analysis.
+        </p>
+        <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6">
+          <p class="font-semibold">Key Components of AI Web Design:</p>
+          <ul>
+            <li>Machine Learning Algorithms</li>
+            <li>Natural Language Processing (NLP)</li>
+            <li>Computer Vision</li>
+            <li>Predictive Analytics</li>
+          </ul>
+        </div>
+      </section>
+  
+      <section id="benefits">
+        <h2>Benefits of AI in Web Design</h2>
+        <p>
+          The integration of AI into web design brings numerous advantages that can significantly improve the design process and end results. Let's explore some of the key benefits:
+        </p>
+        <div class="grid md:grid-cols-2 gap-6 my-6">
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h3 class="text-xl font-semibold mb-2">Increased Efficiency</h3>
+            <p>AI-powered tools can generate multiple design options in a fraction of the time it would take a human designer.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h3 class="text-xl font-semibold mb-2">Enhanced Personalization</h3>
+            <p>AI excels at analyzing user data and behavior patterns, allowing for highly personalized web experiences.</p>
+          </div>
+        </div>
+      </section>
+
+
+    <!-- Generate Code Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 max-w-6xl">
+          <div class="bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl shadow-2xl overflow-hidden">
+            <div class="flex flex-col md:flex-row items-center">
+              <div class="md:w-1/2 p-12">
+                <h2 class="text-3xl font-bold mb-6 text-white">Generate Code for Responsive Website</h2>
+                <p class="text-xl mb-8 text-blue-100">After AI designs your website, you can also generate code for a fully responsive site.</p>
+                <a href="/blog" class="inline-flex items-center px-6 py-3 bg-white text-blue-600 rounded-full shadow hover:bg-gray-100 transition text-lg font-semibold">
+                  Learn More
+                  <svg class="w-5 h-5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="md:w-1/2">
+                <img src="/Aieditor.png" alt="AI Code Generator" class="w-full h-full object-cover" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section id="challenges">
+        <h2>Challenges and Limitations</h2>
+        <p>
+          While AI presents exciting opportunities in web design, it's not without its challenges and limitations. It's important to understand these to effectively integrate AI into the design process:
+        </p>
+        <ul>
+          <li>Creativity and Originality</li>
+          <li>Understanding Context and Emotion</li>
+          <li>O<span style="font-family: &quot;Lucida Console&quot;, Monaco, monospace;">verreliance on Data</span></li>
+          <li>Ethical Concerns</li>
+          <li>Integration with Existing Workflows</li>
+        </ul>
+      </section>
+  
+      <section id="future">
+        <h2>The Future of AI Web Design</h2>
+        <p>
+          As AI technology continues to evolve, its role in web design is likely to expand and become more sophisticated. Here are some potential developments we might see in the future:
+        </p>
+        <figure>
+          <img src="/future-ai-web-design.jpg" alt="Future of AI Web Design" class="rounded-lg">
+          <figcaption class="text-center text-sm text-gray-600 mt-2">AI could revolutionize how we approach web design in the coming years</figcaption>
+        </figure>
+      </section>
+  
+      <section id="conclusion">
+        <h2>Conclusion</h2>
+        <p>
+          The integration of AI into web design is not just a passing trend, but a fundamental shift in how we approach digital design. While AI brings numerous benefits in terms of efficiency, personalization, and data-driven decision making, it also presents challenges that need to be carefully navigated.
+        </p>
+        <div class="bg-gray-100 p-6 rounded-lg my-6">
+          <p class="font-semibold text-lg mb-2">Key Takeaways:</p>
+          <ul>
+            <li><span style="font-weight: bold;">AI is transforming web design through automation and data analysis</span></li>
+            <li><span style="font-weight: normal;">Benefits include increased efficiency and enhanced personalization</span></li>
+            <li>Challenges involve creativity, ethics, and integration with existing processes</li>
+            <li>The future of AI in web design looks promising but requires careful consideration</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  
+    <!-- Author Bio -->
+    <section class="mt-12 bg-gray-100 p-6 rounded-lg" style="background-color: rgb(242, 192, 192);">
+      <div class="flex items-center">
+        <img src="/emily-avatar.jpg" alt="Emily Chen" class="w-16 h-16 rounded-full mr-4">
+        <div>
+          <h3 class="font-semibold text-lg">About the Author</h3>
+          <p class="text-gray-600"><span style="font-size: 50px;">Emily Chen is a web designer and AI enthusiast with over a decade of experience in the tech industr</span>y.</p>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Related Articles -->
+    <section class="mt-12">
+      <h2 class="text-2xl font-bold mb-6">Related Articles</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <a href="#" class="block group">
+          <img src="/article-1-thumb.jpg" alt="Article 1" class="w-full h-48 object-cover rounded-lg mb-2">
+          <h3 class="text-lg font-semibold group-hover:text-blue-600 transition">The Rise of AI-Powered Design Tools</h3>
+        </a>
+        <a href="#" class="block group">
+          <img src="/article-2-thumb.jpg" alt="Article 2" class="w-full h-48 object-cover rounded-lg mb-2">
+          <h3 class="text-lg font-semibold group-hover:text-blue-600 transition">Ethical Considerations in AI Web Design</h3>
+        </a>
+      </div>
+    </section>
+  
+    <!-- Call to Action -->
+    <section class="mt-12 bg-blue-600 text-white p-8 rounded-lg text-center" style="background-color: rgb(199, 244, 169);">
+      <h2 class="text-2xl font-bold mb-4">Stay Updated on AI and Web Design</h2>
+      <p class="mb-6">Subscribe to our newsletter for the latest insights and trends.</p>
+      <form class="flex max-w-md mx-auto">
+        <input type="email" placeholder="Enter your email" class="flex-grow px-4 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-400 text-gray-900">
+        <button type="submit" class="bg-white text-blue-600 px-6 py-2 rounded-r-lg font-semibold hover:bg-gray-100 transition">Subscribe</button>
+      </form>
+    </section>
+  </article>
+
+
+  // this is best i want like this a cahnge the strucutre and makemore smodenr 
+                
+                <!-- Add other sections here -->
+                
+                <section id="conclusion" class="section">
+                    <h2 class="section-title">Conclusion</h2>
+                    <p>As we stand on the cusp of this AI revolution in web design, it's clear that the future holds immense potential. Embracing these changes will be key to staying ahead in the industry.</p>
+                </section>
+            </main>
+        </div>
+        
+        <div class="cta">
+            <h2 class="cta-title">Stay Updated on AI and Web Design</h2>
+            <p>Subscribe to our newsletter for the latest insights and trends.</p>
+            <form class="cta-form">
+                <input type="email" placeholder="Enter your email" class="cta-input">
+                <button type="submit" class="cta-button">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+
+    </body>
+    </html>
+  `;
+
+  return (
+    <div
+      dangerouslySetInnerHTML={{ __html: htmlCode }}
+    />
+  );
+};
+
+export default CodePreview;

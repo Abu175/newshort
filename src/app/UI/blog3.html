@@ -1,0 +1,215 @@
+<article class="bg-gradient-to-b from-gray-50 to-white">
+  <!-- Hero Section -->
+  <header class="container mx-auto px-4 py-20 max-w-6xl">
+    <div class="text-center mb-12">
+      <h1
+        class="text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600"
+      >
+        Design Your Game Website Instantly
+      </h1>
+      <p class="text-2xl text-gray-600 max-w-3xl mx-auto">
+        Discover how to use AI to create a game website in seconds with WebLLix.
+        Get a design that's as captivating as your game.
+      </p>
+    </div>
+    <div class="flex justify-center">
+      <a
+        href="/signup"
+        class="px-8 py-4 bg-blue-600 text-white rounded-full text-xl font-semibold hover:bg-blue-700 transition shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+      >
+        Get Started for Free
+      </a>
+    </div>
+  </header>
+
+  <!-- What is AI Web Design Section -->
+  <section class="bg-gray-100 py-20">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-4xl font-bold mb-12 text-center text-gray-800">
+        What is AI Web Design?
+      </h2>
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <p class="text-xl mb-6 text-gray-700">
+            AI web design leverages artificial intelligence to automatically
+            generate website designs tailored to your needs, including:
+          </p>
+          <ul class="space-y-4">
+            {['Automated, award-winning designs', 'Custom layouts and styles',
+            'Optimized user experience for all devices', 'Instant updates and
+            adjustments'].map((item, index) => (
+            <li key="{index}" class="flex items-center">
+              <svg
+                class="w-6 h-6 mr-2 text-green-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <span class="text-lg text-gray-700">{item}</span>
+            </li>
+            ))}
+          </ul>
+        </div>
+        <div class="md:w-1/2 md:pl-12">
+          <image
+            src="/profile.png"
+            alt="AI Web Design Concept"
+            width="{600}"
+            height="{400}"
+            className="rounded-lg shadow-2xl"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Generate Code Section -->
+  <section class="py-20">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div
+        class="bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl shadow-2xl overflow-hidden"
+      >
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 p-12">
+            <h2 class="text-3xl font-bold mb-6 text-white">
+              Generate Code for Responsive Website
+            </h2>
+            <p class="text-xl mb-8 text-blue-100">
+              After AI designs your website, you can also generate code for a
+              fully responsive site.
+            </p>
+            <a
+              href="/blog"
+              class="inline-flex items-center px-6 py-3 bg-white text-blue-600 rounded-full shadow hover:bg-gray-100 transition text-lg font-semibold"
+            >
+              Learn More
+              <svg
+                class="w-5 h-5 ml-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="md:w-1/2">
+            <image
+              src="/Aieditor.png"
+              alt="AI Code Generator"
+              width="{600}"
+              height="{400}"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose AI Web Design Section -->
+  <section class="bg-gray-50 py-20">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-4xl font-bold mb-16 text-center text-gray-800">
+        Why Choose AI Web Design?
+      </h2>
+      <div class="grid md:grid-cols-3 gap-12">
+        {[ { title: 'Speed', description: 'Create a fully responsive website in
+        minutes', icon: '⚡' }, { title: 'Efficiency', description: 'Access
+        professional design elements instantly', icon: '🎨' }, { title: 'Focus',
+        description: 'Concentrate on content while AI handles design', icon:
+        '🎯' } ].map((item, index) => (
+        <div
+          key="{index}"
+          class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition"
+        >
+          <div class="text-4xl mb-4">{item.icon}</div>
+          <h3 class="text-2xl font-semibold mb-4 text-gray-800">
+            {item.title}
+          </h3>
+          <p class="text-gray-600">{item.description}</p>
+        </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="py-20">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-4xl font-bold mb-16 text-center text-gray-800">
+        How AI Web Design Works
+      </h2>
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <div class="md:w-1/2 mb-12 md:mb-0">
+          {[ { title: 'Input Your Preferences', description: 'Tell the AI what
+          you need—whether it's a portfolio, eCommerce site, or blog.' }, {
+          title: 'Generate Your Design', description: 'AI instantly generates a
+          website layout based on your preferences.' }, { title: 'Customize and
+          Launch', description: 'Make any final tweaks and launch your site—no
+          coding required.' } ].map((step, index) => (
+          <div key="{index}" class="flex mb-8">
+            <div
+              class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center text-white text-2xl font-bold mr-4"
+            >
+              {index + 1}
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold mb-2 text-gray-800">
+                {step.title}
+              </h3>
+              <p class="text-gray-600">{step.description}</p>
+            </div>
+          </div>
+          ))}
+        </div>
+        <div class="md:w-1/2 md:pl-12">
+          <image
+            src="/Aieditor.png"
+            alt="AI Web Design Process"
+            width="{600}"
+            height="{400}"
+            className="rounded-lg shadow-2xl"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section
+    class="bg-gradient-to-r from-blue-600 to-indigo-600 py-20 text-white"
+  >
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+      <h2 class="text-4xl font-bold mb-8">Ready to Design Your Website?</h2>
+      <p class="text-xl mb-12">
+        Start using WebLLix AI for free and create a professional site in
+        seconds.
+      </p>
+      <a
+        href="/signup"
+        class="inline-block px-8 py-4 bg-white text-blue-600 rounded-full text-xl font-semibold hover:bg-gray-100 transition shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+      >
+        Get Started Now
+      </a>
+    </div>
+  </section>
+</article>

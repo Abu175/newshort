@@ -1,0 +1,198 @@
+<html>
+  <head>
+    <style></style>
+  </head>
+  <body>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Architecture Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center p-6 bg-gray-800">
+      <div class="text-2xl font-bold">Architecture</div>
+      <ul class="flex space-x-6">
+        <li><a href="#hero1" class="hover:text-yellow-400">Hero 1</a></li>
+        <li><a href="#hero2" class="hover:text-yellow-400">Hero 2</a></li>
+        <li><a href="#hero3" class="hover:text-yellow-400">Hero 3</a></li>
+        <li><a href="#hero4" class="hover:text-yellow-400">Hero 4</a></li>
+      </ul>
+      <a href="#subscribe" class="px-4 py-2 bg-yellow-400 text-black rounded-lg"
+        >Subscribe</a
+      >
+    </nav>
+
+    <!-- Hero Section 1 (Standard Fullscreen Hero) -->
+    <section
+      id="hero1"
+      class="h-screen bg-cover bg-center flex flex-col justify-center items-center text-center"
+      style="
+        background-image: url(&quot;https://images.pexels.com/photos/2885569/pexels-photo-2885569.jpeg&quot;);
+      "
+    >
+      <img
+        src="https://mydocsignchat.s3.us-west-1.amazonaws.com/0b839cb1-5c92-432a-aa71-0c6ab4fcda51.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIA5FTZBCCNCZWMNZPT%2F20241011%2Fus-west-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20241011T215849Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=0c25bab4de699e111be8eccdb1b74a3497a0576548745d95fe4bde3ac5472c6e&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject"
+        alt="Generated photo"
+        class="w-full h-full object-cover"
+        draggable="true"
+      />
+      <h1 class="text-6xl font-extrabold mb-4">AI in Architecture</h1>
+      <p class="text-2xl mb-6">
+        Shaping the future of design with artificial intelligence
+      </p>
+      <a href="#designs" class="px-8 py-4 bg-yellow-400 text-black rounded-lg"
+        >Explore Now</a
+      >
+    </section>
+
+    <!-- Hero Section 2 (Split Image + Text Layout) -->
+    <section id="hero2" class="h-screen flex items-center">
+      <div
+        class="w-1/2 h-full bg-cover"
+        style="
+          background-image: url(&quot;https://images.pexels.com/photos/210537/pexels-photo-210537.jpeg&quot;);
+        "
+      >
+        <img
+          src="https://replicate.delivery/yhqm/CoeVn32Nrt1WSKRV93DoFMgFPWtrxZZRylsJyP22rkG2Z6yJA/out-0.webp"
+          alt="Generated photo"
+          class="w-full h-full object-cover"
+          draggable="true"
+        />
+      </div>
+      <div class="w-1/2 h-full flex flex-col justify-center items-start p-12">
+        <h2 class="text-5xl font-bold mb-4">Innovation Through AI</h2>
+        <p class="text-xl mb-6">
+          Architectural designs powered by artificial intelligence to create
+          sustainable and futuristic environments.
+        </p>
+        <a
+          href="#features"
+          class="px-8 py-4 bg-yellow-400 text-black rounded-lg"
+          >Learn More</a
+        >
+      </div>
+    </section>
+
+    <!-- Hero Section 3 (Image with Overlay Text) -->
+    <section
+      id="hero3"
+      class="h-screen bg-cover bg-fixed relative flex flex-col justify-center items-center text-center"
+      style="
+        background-image: url(&quot;https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg&quot;);
+      "
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div class="relative z-10">
+        <h2 class="text-6xl font-bold mb-4 text-white">
+          Building with Intelligence
+        </h2>
+        <img
+          src="https://mydocsignchat.s3.us-west-1.amazonaws.com/0b839cb1-5c92-432a-aa71-0c6ab4fcda51.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIA5FTZBCCNCZWMNZPT%2F20241011%2Fus-west-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20241011T215849Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=0c25bab4de699e111be8eccdb1b74a3497a0576548745d95fe4bde3ac5472c6e&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject"
+          alt="Generated photo"
+          class="w-full h-full object-cover"
+          draggable="true"
+        />
+        <p class="text-2xl mb-6">
+          AI-driven architecture helps solve modern design challenges by
+          combining technology and sustainability.
+        </p>
+        <a href="#cta" class="px-8 py-4 bg-yellow-400 text-black rounded-lg"
+          >Start Now</a
+        >
+      </div>
+    </section>
+
+    <!-- Hero Section 4 (Full-screen Video Background) -->
+    <section
+      id="hero4"
+      class="h-screen relative flex flex-col justify-center items-center text-center"
+    >
+      <video
+        autoplay=""
+        muted=""
+        loop=""
+        class="absolute inset-0 w-full h-full object-cover z-0"
+      >
+        <source src="path-to-your-video.mp4" type="video/mp4" />
+      </video>
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="relative z-10">
+        <h2 class="text-6xl font-bold mb-4">Revolutionizing Design</h2>
+        <p class="text-2xl mb-6">
+          AI-powered systems are pushing the boundaries of what is possible in
+          modern architecture.
+        </p>
+        <a href="#contact" class="px-8 py-4 bg-yellow-400 text-black rounded-lg"
+          >Contact Us</a
+        >
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-800">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">Key Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div class="p-6 bg-gray-700 rounded-lg shadow-lg">
+            <h3 class="text-3xl font-bold mb-4">AI-Driven Design</h3>
+            <p class="text-gray-400">
+              Our AI tools are capable of generating designs faster and more
+              efficiently.
+            </p>
+          </div>
+          <div class="p-6 bg-gray-700 rounded-lg shadow-lg">
+            <h3 class="text-3xl font-bold mb-4">Sustainability Focus</h3>
+            <p class="text-gray-400">
+              Our architecture focuses on sustainability and eco-friendly
+              designs.
+            </p>
+          </div>
+          <div class="p-6 bg-gray-700 rounded-lg shadow-lg">
+            <h3 class="text-3xl font-bold mb-4">Future Innovation</h3>
+            <p class="text-gray-400">
+              We incorporate future technology into every architectural project.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-20 bg-yellow-400 text-black text-center">
+      <h2 class="text-4xl font-bold mb-4">Join&nbsp;</h2>
+      <img
+        src="https://mydocsignchat.s3.us-west-1.amazonaws.com/de245cc0-4ed5-4b2e-badb-f6344867dfdc.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIA5FTZBCCNCZWMNZPT%2F20241011%2Fus-west-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20241011T215126Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=45094ad4d687d7f2cae9775fd2328ed43c4e772059d266daae31ce5d0121758a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject"
+        alt="Generated photo"
+        class="w-full h-full object-cover"
+        draggable="true"
+      />
+      <h2 class="text-4xl font-bold mb-4">
+        Us in Shaping the Future of Architecture
+      </h2>
+      <p class="mb-8">
+        Leverage AI technology to take your architectural designs to the next
+        level.
+      </p>
+      <a
+        href="#subscribe"
+        class="px-8 py-4 bg-gray-900 text-yellow-400 rounded-lg"
+        >Subscribe Now</a
+      >
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-10">
+      <div class="container mx-auto text-center text-gray-400">
+        <h4 class="text-xl font-bold mb-4">AI Architecture Design 2024</h4>
+        <p>© 2024 All rights reserved. Contact: (123) 456-7890</p>
+        <ul class="flex justify-center space-x-4 mt-6">
+          <li><a href="#" class="hover:text-yellow-400">Facebook</a></li>
+          <li><a href="#" class="hover:text-yellow-400">Twitter</a></li>
+          <li><a href="#" class="hover:text-yellow-400">LinkedIn</a></li>
+          <li><a href="#" class="hover:text-yellow-400">Instagram</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

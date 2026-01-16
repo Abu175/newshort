@@ -1,0 +1,18 @@
+///INSTAGRAM_CLIENT_ID=your_instagram_client_id
+//INSTAGRAM_CLIENT_SECRET=your_instagram_client_secret
+//YOUTUBE_CLIENT_ID=your_youtube_client_id
+//YOUTUBE_CLIENT_SECRET=your_youtube_client_secret
+//REDDIT_CLIENT_ID=your_reddit_client_id
+//REDDIT_CLIENT_SECRET=your_reddit_client_secret
+/////PINTEREST_CLIENT_ID=your_pinterest_client_id
+//PINTEREST_CLIENT_SECRET=your_pinterest_client_secret
+//TWITTER_CLIENT_ID=your_twitter_client_id
+//TWITTER_CLIENT_SECRET=your_twitter_client_secret
+//LINKEDIN_CLIENT_ID=your_linkedin_client_id
+//LINKEDIN_CLIENT_SECRET=your_linkedin_client_secret
+///FACEBOOK_CLIENT_ID=your_facebook_client_id
+//FACEBOOK_CLIENT_SECRET=your_facebook_client_secret
+//APP_URL=your_app_url
+
+In your route.ts file, you can now handle all these platforms using the same PlatformAuth functions. Make sure to implement proper error handling and consider rate limiting to comply with each platform's API usage guidelines.
+Also, note that some platforms might require additional setup or have specific requirements for video uploads. You'll need to consult each platform's API documentation for the most up-to-date information on their OAuth flows and video upload processe
