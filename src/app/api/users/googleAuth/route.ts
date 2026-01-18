@@ -12,19 +12,19 @@ export const authOptions: NextAuthOptions = {
     signIn: "/login",
   },
   callbacks: {
-    async signIn({ account, profile }) {
+    async signIn({ account, profile }: any) {
       if (account?.provider === "google") {
-        return profile?.email_verified && profile?.email?.endsWith("@gmail.com") ?? false;
+        return (profile?.email_verified && profile?.email?.endsWith("@gmail.com")) ?? false;
       }
       return true; // Do different verification for other providers that don't have `email_verified`
     },
-    async session({ session, token }) {
+    async session({ session, token }: any) {
       if (session?.user) {
         session.user.id = token.sub;
       }
       return session;
     },
-    async jwt({ token, user }) {
+    async jwt({ token, user }: any) {
       if (user) {
         token.uid = user.id;
       }
